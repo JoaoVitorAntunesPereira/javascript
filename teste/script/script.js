@@ -26,7 +26,6 @@ const CPF = document.querySelector('input#cpf')
 CPF.addEventListener('keypress', () => {
     let CPFLength = CPF.value.length
 
-    // MAX LENGHT 14  CPF
     if (CPFLength == 3 || CPFLength == 7) {
         CPF.value += '.'
     }else if (CPFLength == 11) {
@@ -34,22 +33,8 @@ CPF.addEventListener('keypress', () => {
 }
 })
 
-
-function tele2(){
-    telefone.addEventListener('keypress', () => {
-        let telefoneLength = telefone.value.length
-    
-        if (telefoneLength == 1) {
-            telefone.value = '(' + telefone.value + ') ' 
-        }else
-         if (telefoneLength == 7) {
-            telefone.value += '-'
-        }
-    })
-}
-
-
 const telefone = document.querySelector('input#telefone')
+
 
 telefone.addEventListener('keypress', () => {
     let telefoneLength = telefone.value.length
@@ -82,10 +67,13 @@ telefone.addEventListener('keypress', () => {
 
 var left = true
 
+
+var botao = document.querySelector('input#botao')
+var nome = document.querySelector('input#nome')
+var senha = document.querySelector('input#senha')
+
+
 function validateForm(){
-    var botao = document.querySelector('input#botao')
-    var nome = document.querySelector('input#nome')
-    var senha = document.querySelector('input#senha')
 
     if (nome == null || nome == "a"){
         botao.classList.add("mudacor")

@@ -69,17 +69,17 @@ var left = true
 
 
 var botao = document.querySelector('input#botao')
-var nome = document.querySelector('input#nome').value
+var nome = document.querySelector('input#nome').value()
 var senha = document.querySelector('input#senha')
 
 
 
 function validateForm(){
 
-    if (nome === null || nome === ""){
+    if (nome == null || nome == ""){
         botao.classList.add("erro")
         ChangePosition(botao)
-    }else if(nome != null|| nome != ""){
+    }else {
         botao.classList.add("sucesso")
     }
 }

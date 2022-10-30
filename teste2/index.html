@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Marcará Telefone</title>
+    <script>
+        function mascaraDeTelefone(telefone){
+            const textoAtual = telefone.value;
+            const isCelular = textoAtual.length === 11;
+            let textoAjustado;
+            if(isCelular) {
+                const parte0 = textoAtual.slice(0,2);
+                const parte1 = textoAtual.slice(2,7);
+                const parte2 = textoAtual.slice(7,11);
+                textoAjustado = `(${parte0})${parte1}-${parte2}`        
+            } else {
+                const parte0 = textoAtual.slice(0,2);
+                const parte1 = textoAtual.slice(2,6);
+                const parte2 = textoAtual.slice(6,10);
+                textoAjustado = `(${parte1})${parte1}-${parte2}`
+            }
+
+            telefone.value = textoAjustado;
+        }
+
+        function tiraHifen(telefone) {
+            const textoAtual = telefone.value;
+            const textoAjustado = textoAtual.replace(/\-/g, '');
+
+            telefone.value = textoAjustado;
+        }
+    </script>
+    <style>
+        input{
+            width: 230px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input type="text" onblur="mascaraDeTelefone(this)" 
+               placeholder="(99)99999-9999 ou (99)9999-99999" 
+               onfocus="tiraHifen(this)" />    
+      </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+div#area{
+    font: normal 20pt Arial;
+    background: greenyellow;
+    color: white;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+}
+
+div#area.clicar{
+    font: normal 20pt Arial;
+    background: red;
+    color: black;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+}
+
+/* body.clicar{
+    background: #b700ff;
+} */
+
+/* h1.clicar{
+    color: #2f00ff;
+} */
+
+html.clicar{
+    background: #b700ff;
+    color: blue;
+}

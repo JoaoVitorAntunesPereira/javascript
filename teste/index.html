@@ -13,8 +13,8 @@
         <h1>Login</h1>
         <form action="">
             <div>
-                <label for="user"><i class='bx bxs-user'></i></label>
-                <input type="text" placeholder="Usuário" name="user" id="usuario" required>
+                <label for="nome"><i class='bx bxs-user'></i></label>
+                <input type="text" placeholder="Nome" name="nome" id="nome" required>
             </div>
             <div>
                 <label for="password"><i class='bx bxs-lock'></i></label>
@@ -29,7 +29,7 @@
                 <input type="tel" name="telefone" id="telefone" placeholder="Telefone" maxlength="15" required>
             </div>
             <!-- <button type="submit" onmouseenter="ChangePosition(botao)" id="botao">Logar</button> -->
-            <input type="submit" id="botao" onmouseenter="ChangePosition(botao)">
+            <input type="submit" id="botao" onmouseenter="validateForm()">
         </form>
     </div>
     <script src="script/script.js"></script>

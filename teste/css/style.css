@@ -90,9 +90,14 @@ textarea:focus, input:focus {
     outline: 0;
 }
 
-button.mudarcor {
+input.erro {
     background: red;
 }
+
+input.sucesso {
+    background: green;
+}
+
 
 
 

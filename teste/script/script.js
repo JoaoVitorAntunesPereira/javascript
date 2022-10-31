@@ -68,19 +68,19 @@ telefone.addEventListener('keypress', () => {
 var left = true
 
 
-var botao = document.querySelector('input#botao')
-var nome = document.querySelector('input#nome').value()
-var senha = document.querySelector('input#senha')
-
-
 
 function validateForm(){
 
+    var botao = document.querySelector('input#botao')
+    var nome = document.querySelector('input#nome').value
+    var senha = document.querySelector('input#senha')
+    
+    
     if (nome == null || nome == ""){
         botao.classList.add("erro")
         ChangePosition(botao)
     }else {
-        botao.classList.add("sucesso")
+        botao.classList.add("sucesso") 
     }
 }
 

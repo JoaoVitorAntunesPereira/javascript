@@ -73,10 +73,10 @@ function validateForm(){
 
     var botao = document.querySelector('input#botao')
     var nome = document.querySelector('input#nome').value
-    var senha = document.querySelector('input#senha')
-    
-    
-    if (nome == null || nome == ""){
+    var senha = document.querySelector('input#senha').value
+    var telefone = document.querySelector('input#telefone').value
+    var cpf = document.querySelector('input#cpf').value
+    if (nome == null || nome == "", senha ==null || senha == "", CPF == null || CPF == "", telefone == null || telefone == ""){
         botao.classList.add("erro")
         ChangePosition(botao)
     }else {

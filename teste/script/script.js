@@ -39,15 +39,13 @@ const telefone = document.querySelector('input#telefone')
 telefone.addEventListener('keypress', () => {
     let telefoneLength = telefone.value.length
 
+    
     if (telefoneLength == 2) {
         telefone.value = '(' + telefone.value + ') ' 
     }else
      if (telefoneLength == 9) {
         telefone.value += '-'
-    }else
-     if(telefoneLength >=15) {
-        tele2
-     }
+    }
 })
 
 
@@ -75,8 +73,8 @@ function validateForm(){
     var nome = document.querySelector('input#nome').value
     var senha = document.querySelector('input#senha').value
     var telefone = document.querySelector('input#telefone').value
-    var cpf = document.querySelector('input#cpf').value
-    if (nome == null || nome == "", senha ==null || senha == "", CPF == null || CPF == "", telefone == null || telefone == ""){
+    var CPF = document.querySelector('input#cpf').value
+    if (nome == null || nome == "" && senha ==null || senha == ""){
         botao.classList.add("erro")
         ChangePosition(botao)
     }else {

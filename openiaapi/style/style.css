@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    
+    background-image: url("wallpaperblue.jpg");
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.74), rgba(0, 0, 0, 0.486));
+}
+
+div.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.content textarea{
+    border: none;
+    padding: 5px;
+    width: 40vw;
+    resize: none;
+    color: aliceblue;
+    font-size: 1.2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+div.content textarea:focus{
+    outline: none;
+}
+
+div.content textarea#result{
+    margin-top: 1%;
+    background-color: #444654;
+    height: 70vh;
+}
+
+div.content textarea#inputQuestion{
+    background-color: #343541;
+    height: 20vh;
+}
